@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>StudyTrack - Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container dashboard">
+    <h1>Welcome, <span id="user-name"></span></h1>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+
+    <h2>Add Study Session</h2>
+    <input type="text" id="course" placeholder="Course name">
+    <input type="number" id="duration" placeholder="Duration (hours)">
+    <input type="text" id="notes" placeholder="Notes (optional)">
+    <button onclick="addSession()">Add Session</button>
+
+    <h2>Your Sessions</h2>
+    <div id="session-list" class="session-list"></div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
